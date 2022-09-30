@@ -5,20 +5,19 @@ public class Robot {
 
     //Instance Variables (HAS A)
     public String name;
-    public String weaponName;
-    public int weaponPower;
+    public Weapon weapon;
 
-    public Robot() {
+    //constructor
+    public Robot(Weapon weapon) {
 
         this.name = "Mustang";
-        this.weaponName = "Sally";
-        this.weaponPower = 101;
+        this.weapon = weapon;
 
 
     }
 
     public void Attack(){
-        System.out.println(this.name + " attacks with " + this.weaponName + " for " + this.weaponPower + " damage.");
+        System.out.println(this.name + " attacks with " + this.weapon.weaponName + " for " + this.weapon.power + " damage.");
 
     }
 
