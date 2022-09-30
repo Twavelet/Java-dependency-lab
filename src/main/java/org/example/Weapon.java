@@ -1,6 +1,6 @@
 package org.example;
 
-public class Weapon {
+public abstract class Weapon {
 
     //Instance Variables - "has a"
         public String weaponName;
