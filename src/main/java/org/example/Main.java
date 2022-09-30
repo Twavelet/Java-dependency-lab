@@ -8,8 +8,8 @@ public class Main {
 //        Weapon stick = new Weapon("stick", 102);
 //        Weapon rock = new Weapon("rock", 103);
         Stick stick = new Stick();
-        Robot robot_one = new Robot("Groot", stick);
-        System.out.println(robot_one.name);
+        Attacker robot_one = new Robot("Groot", stick);
+    
         robot_one.Attack();
 
         Rock rock = new Rock();
@@ -20,5 +20,8 @@ public class Main {
         Bear bear = new Bear();
         Robot robot_three = new Robot("Grylls", bear);
         robot_three.Attack();
+
+        Attacker kraken = new Kraken("Squidward", 107);
+        kraken.Attack();
     }
 }

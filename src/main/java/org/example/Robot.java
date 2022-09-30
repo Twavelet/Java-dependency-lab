@@ -1,6 +1,6 @@
 package org.example;
 
-public class Robot {
+public class Robot implements Attacker{
 
 
     //Instance Variables (HAS A)
@@ -17,7 +17,7 @@ public class Robot {
     }
 
     public void Attack(){
-        System.out.println(this.name + " attacks with " + this.weapon.weaponName + " for " + this.weapon.power + " damage.");
+        System.out.println(this.name + " attacks with a " + this.weapon.weaponName + " for " + this.weapon.power + " damage.");
 
     }
 
